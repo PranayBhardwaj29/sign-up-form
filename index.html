@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="leftSide">
+            <img class="titleImg" src="./images/daniela-izotenko-hOhlYhAiizc-unsplash.jpg" alt="nice green plant">
+    
+            <div class="photoTag">
+                    Photo by 
+                <a href="https://unsplash.com/@danielaiphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Daniela Izotenko
+                </a> 
+                    on 
+                <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash
+                </a>
+  
+  
+  
+            </div>
+            <div class="logo">
+                <img class="odinImg" src="./images/odin-lined.png" alt="Odin face">
+                <div class="odinTxt">ODIN</div>
+            </div>
+        </div>
+        <div class="rightSide">
+            <p class="mainTxt">
+                This is not a real online service! You know you need something like this in your life 
+                to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started!<br><br>
+                You <em>know</em> you want to.
+            </p>
+            <form action="#" method="get" class="regForm">
+                
+                <div class="textInput">
+                    <h1 class="formHead">Let's do this!</h1>
+                    <div class="formRow">
+                       
+                        <div class="validRow">
+                            <input class="inp" id="firstName" name="firstName"  minlength = "3" type='text' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
+                        <label for="firstName">
+                            FIRST NAME   
+                        </label>
+                    </div>
+                   
+                    <div class="formRow">
+                        
+                        <div class="validRow">
+                            <input id="lastName" class="inp" name="lastName"  placeholder=" "  minlength = "3" type='text' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
+                        <label for="lastName">
+                            LAST NAME
+                           
+                        </label>
+                    </div>
+                    <div class="formRow">
+                        
+                        <div class="validRow">
+                            <input id="email"  class="inp"  name="email" type="email" placeholder=' ' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
+                        <label for="email">
+                            EMAIL
+                            
+                        </label>
+                    </div>
+                    <div class="formRow">
+                       
+                        <div class="validRow">
+                            <input id="tel"  class="inp" name="tel" type="tel" placeholder=" " minlength = "7" maxlength = "10" pattern="[0-9]{7,}" required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
+                        <label for="tel">
+                            PHONE NUMBER
+                            
+                        </label>
+                    </div>
+                    <div class="formRow">
+                        <div class="passMatch"></div>
+                        <div class="validRow">
+                            <input id="password" class="inp"  name="password" placeholder=" " minlength = "3" type="password" required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div> 
+                        <label for="password">
+                            PASSWORD
+                            
+                        </label>
+                        
+                    </div>
+                    
+                    <div class="formRow">
+                        
+                        <div class="validRow">
+                            <input id="confPassword"  class="inp" name="confPassword" placeholder=" "  minlength = "3" type='password' required/>
+                            <pre class="val">  ✔</pre>
+                            <pre class="inval">  </pre>
+                        </div>
+                        <label for="confPassword">
+                            CONFIRM PASSWORD
+                            
+                            
+                        </label>
+                    </div>
+                   
+                </div>
+                <button>Create Account</button>
+            </form>
+            <div class="logIn">Already have account? <a href="#">Log in</a></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+@font-face {
+    font-family:Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf)
+}
+* { 
+    font-family:Cairo, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+      display: flex;    
+  }
+
+  .titleImg{
+     
+    height: 100%;
+    width:35vw;
+}
+.leftSide{
+    position: relative;
+    background-color: rgba(230, 230, 230, 0.671);
+}
+.photoTag{
+    font-size: 1.3vw;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    left: 5vw;
+    bottom: 15px;
+}
+.photoTag a{
+    color:rgb(255, 255, 255);
+
+}
+.logo{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+    top:19%;
+    padding:10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.odinImg{
+    
+    height: auto;
+    width: 7vw;
+    
+}
+.odinTxt{
+    color:rgb(255, 255, 255);
+    font-family: Norse-Bold, sans-serif;
+    font-size: 7vw;
+}
+
+.mainTxt{
+    font-weight: 600;
+    background-color: rgba(230, 230, 230, 0.671);
+    padding: 3vw 10vw 3vw 3vw;
+    font-size: calc(1.3vw + 5px);
+}
+ 
+.formHead{
+    width: 100%;
+    padding-top: 1vw;
+    padding-left: 3vw;
+    font-size: calc(1.4vw + 5px);
+
+}
+.textInput{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    box-shadow: 5px 2px 5px rgba(134, 134, 134, 0.274);
+}
+.formRow {
+    padding-left: 3vw;
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+ .validRow{
+     position: relative;
+     display: flex;
+     
+     align-items: center;
+ }
+ .validRow pre{
+    left:16.5vw;
+    position: absolute;
+    display: inline;
+}
+
+
+ .val {
+    color:rgb(42, 117, 42);
+    font-size: 1.6vw;
+}
+
+ .inval {  
+    color:rgb(158, 46, 46);
+    font-size: 1.4vw;
+}
+ 
+
+input[type="text"]:invalid ~ .val, input[type="text"]:valid ~ .inval,  
+input[type="email"]:invalid ~ .val, input[type="email"]:valid ~ .inval,
+input[type="tel"]:invalid ~ .val, input[type="tel"]:valid ~ .inval,
+input[type="password"]:invalid ~ .val, input[type="password"]:valid ~ .inval{
+opacity: 0;
+}
+
+input[type="text"]:invalid ~  .inval, input[type="text"]:valid ~  .val,
+input[type="email"]:invalid ~  .inval, input[type="email"]:valid ~  .val,
+input[type="tel"]:invalid ~  .inval, input[type="tel"]:valid ~  .val,
+input[type="password"]:invalid ~  .inval, input[type="password"]:valid ~  .val{
+opacity: 1;
+}
+
+.formRow label {
+font-size: calc(1vw + 2px);
+position: relative;
+}
+
+.formRow input[type='text'],
+.formRow input[type='email'],
+.formRow input[type='tel'],
+.formRow input[type='password']{ 
+background-color: #FFFFFF;
+border: 1px solid #a7a7a7;
+border-radius: 3px;
+
+width: 19vw;
+height: calc(1.5vw + 10px);
+padding: 4px;
+font-size: 1.5vw;
+--webkit-appearance: none;
+appearance: none;
+}
+
+
+
+.formRow input[type='text']:invalid,
+.formRow input[type='email']:invalid,
+.formRow input[type='tel']:invalid,
+.formRow input[type='password']:invalid {
+background-image: linear-gradient(to right, white, rgba(255, 0, 0, 0.144));
+
+}
+input:valid{
+    background-color: white !important;
+}
+
+.formRow input[type='text']:focus,
+.formRow input[type='email']:focus,
+.formRow input[type='tel']:focus,
+.formRow input[type='password']:focus {
+outline: 2px solid rgb(0, 12, 121);
+-webkit-appearance: none;
+appearance: none;
+box-shadow: 3px 3px 5px rgb(136, 136, 136);
+
+}
+.passMatch{
+    font-size:1.2vw;
+    color:red;
+}
+button{
+background-color: #536b3d;
+border-width: 1px;
+border-color: #596D48 ;
+border-radius: 7px;
+color: white;
+font-size: 1.5vw;
+margin:2vw 3vw;
+padding: 10px 30px;
+box-shadow: 5px 5px 5px rgb(141, 141, 141);
+} 
+
+button:hover{
+cursor: pointer;
+}
+button:active{
+    box-shadow: none;
+}
+.logIn{
+    font-size: 1.6vw;
+    padding-left:3vw;
+}
+.logIn a{
+    font-weight: 700;
+    color:#596D48;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    
+    .mainTxt, .textInput{
+        padding-left: 4vw;
+    }
+    .formRow{
+        padding: 0;
+    }
+    .titleImg{
+        height: auto;
+        width:100vw;
+    }
+    .logo{
+        width: 100%;
+        top:20%;
+        
+        padding:20px 0;
+        
+    }
+    .odinImg{
+        height: auto;
+        width: 20vw;
+        
+    }
+    .odinTxt{    
+        font-size: 20vw;
+    }
+    .photoTag{
+        font-size: 4vw;
+        left: 20%;
+    }       
+    .container{
+        flex-direction: column;
+    }
+    .mainTxt{
+        font-size: 4vw;
+    }
+
+    .formHead{  
+        font-size: calc(3vw + 10px);
+    }
+   
+      .formRow label {
+        font-size: calc(3vw + 7px);
+      }
+    
+      .formRow input[type='text'],
+      .formRow input[type='email'],
+      .formRow input[type='tel'],
+      .formRow input[type='password']
+       {
+        
+        
+        width:80vw;
+        height: 10vw;
+        padding: 4px;
+        font-size: 6vw;
+      }
+      button{
+        margin-top: 3vw;
+        font-size: 5vw;
+        
+    }
+    .logIn{
+        font-size: 5vw;
+        padding-bottom: 10vw;
+       
+    }
+
+    .passMatch{
+        font-size:4vw;
+       
+    }
+    .validRow pre {
+        
+        left: 70vw; 
+    }
+
+    .val{
+        font-size:6vw;
+    }
+    .inval{
+        font-size: 5vw;
+    }
+}
+
